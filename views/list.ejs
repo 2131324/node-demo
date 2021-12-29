@@ -7,7 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <h2>Have a nice day</h2>
+    <!-- <h2>Names : <%= names%></h2> -->
+    <%- include('./partials/navbar')%>
+    <ol>
+        <% for(var i=0;i< names.length;i++) {%>
+            <li><%= names[i]%></li> 
+        <% } %>
+    </ol>
 </body>
 </html>
